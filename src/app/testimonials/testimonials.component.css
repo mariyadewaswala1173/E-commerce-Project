@@ -1,0 +1,156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand&display=swap');
+
+:root{
+    --primary : #c3026d;
+    --secondary : #b88153;
+    --hov: #c3026c93;
+}
+body {
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h2 {
+	font-family: 'Bree Serif', serif;
+	padding: 0 1rem;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.testimonials-container {
+	padding: 0 40px;
+	margin: 30px 0 50px;
+	position: relative;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.testimonials {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: space-evenly;
+}
+
+.testimonials-container h2 {
+	padding: 10px 10px 15px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto 30px;
+}
+
+.testimonial {
+	width: 25%;
+	border-radius: 20px;
+	background: linear-gradient(to right bottom, #c3026ca1, #c3026c6c, #c91e7c59, #c44b8e33, #c771a021);
+	padding: 20px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.testimonial:after {
+  content: "";
+  display: block; 
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  width: 0;
+  border-width: 15px 20px 0;
+  border-style: solid;
+  border-color: #F7D3DD60 transparent;
+}
+
+.testimonial p {
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+.testimonal-author {
+	font-size: 1rem;
+	position: absolute;
+	bottom: -25px;
+	right: 0;
+    font-style:italic;
+    font-weight: 500;
+}
+
+@media all AND (max-width: 700px) {
+	
+	.testimonials {
+    flex-direction: column;
+		align-items: center;
+	}
+
+	.testimonial {
+		width: 90%;
+		margin-bottom: 60px;
+	}
+
+} */
+swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom:50px ;
+}
+
+swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonial {
+	border-radius: 20px;
+	height: 200px;
+	background: linear-gradient(to right bottom, #c3026ca1, #c3026c6c, #c91e7c59, #c44b8e33, #c771a021);
+	padding: 20px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.testimonial p {
+	/* margin-bottom: 10px; */
+	color: var(--light);
+}
+.testimonial h5 {
+	color: var(--primary);
+}
+.testimonial span {
+	color: var(--secondary);
+}
+.testimonial:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	right: 50px;
+	width: 0;
+	border-width: 15px 20px 0;
+	border-style: solid;
+	border-color: #F7D3DD60 transparent;
+}
+.testimonal-author {
+	font-size: 1rem;
+	position: absolute;
+	bottom: -25px;
+	right: 0;
+    font-style:italic;
+    font-weight: 500;
+}
+
+.swiper-pagination {
+	margin: 20px;
+}

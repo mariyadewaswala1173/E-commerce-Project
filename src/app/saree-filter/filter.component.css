@@ -1,0 +1,105 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-sec {
+    background-color: white;
+    /* box-shadow: 0 0 4px rgb(101, 100, 100); */
+}
+
+.column-sidebar {
+    padding: 10px 25px;
+    /* text-align: center; */
+    /* border: solid 1px rgba(0,0,0,0.1); */
+}
+
+
+.filter-heading {
+    padding: 15px 0 0;
+}
+
+.filter-sec .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.color-radios {
+    padding: 0 10px;
+}
+
+.fabric-radios, .price-radios, .id-radios, .category-radios {
+    padding: 20px;
+}
+.fabric-radios label{
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+}
+.price-radios label{
+    font-size: 16px;
+}
+.form-check label:hover {
+    cursor: pointer;
+    color: #c3026d;
+}
+.form-check label:hover {
+    border-color: #c3026d;
+}
+.form-check label,
+input {
+    /* font-size: 20px; */
+    text-transform: capitalize;
+}
+
+/* .form-check{
+    margin: 5px 0;
+} */
+
+.form-check label {
+    padding: 2px;
+}
+
+.form-check .fa {
+    text-shadow: 0 0 1px grey;
+}
+@media (min-width:993px){
+    .column-sidebar {
+        padding: 30px;
+    }
+    .filter-heading{
+        font-size: 26px;
+        padding: 0;
+    }
+    .button-filter{
+        margin-top:5rem;
+    }
+    .filter-list{
+        margin-top: 3rem;
+    }
+}
+@media (min-width:769px) {
+    .filter-heading{
+        margin-bottom: 1rem;
+    }
+    .button-filter{
+        margin-top:2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .filter-heading{
+        margin-bottom: 2rem;
+    }
+    .button-filter{
+        margin-top:4rem;
+    }
+}
+

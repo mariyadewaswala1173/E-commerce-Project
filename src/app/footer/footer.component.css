@@ -1,0 +1,91 @@
+
+.footer{
+    height: 650px;
+    width: 100%;
+    /* background-color: #f29eb6; */
+   background-image: linear-gradient(to bottom,  #fff ,#ffb5ca);
+}
+.footer .container .row .col-lg-4 .image img{
+    height: 650px;
+    width: auto;
+   padding-left: 150px;
+}
+
+li{
+    list-style: none;
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 .call .icon i{
+    color: crimson;
+    z-index: 1000;
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 .call{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 .mail{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 .call .icon .box{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.footer .container .row .col-lg-8 .row .coma{
+    padding: 20px;
+}
+.footer .container .row .col-lg-8 .row .coma i{
+    padding: 10px;
+    font-size: 24px;
+    color: crimson;
+}
+.footer .container .row .col-lg-8 .row .coma .mail i{
+    font-size: 20px;
+}
+
+
+.footer .container .row .col-lg-8 .row .col-lg-4 .mail .icon .box{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footer .container .row .col-lg-8 .row .col-lg-4 p{
+    margin: 0;
+
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 h5{
+    color: crimson;
+}
+.footer .container .row .col-lg-8 .row .col-lg-4 h6{
+    color: crimson;
+}
+
+.footer .container .row .col-lg-8 .row{
+    margin-top: 100px;
+}
+.footer .container .row .col-lg-8 .mainicon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .container .row .col-lg-8 .mainicon .icon .box{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+.footer .container .row .col-lg-8 .mainicon .icon .box i{
+    padding: 9px;
+    font-size: 24px;
+    color: crimson;
+}

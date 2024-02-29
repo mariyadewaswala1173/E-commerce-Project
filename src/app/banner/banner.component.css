@@ -1,0 +1,152 @@
+.banner .owl-theme .owl-nav [class*=owl-] {
+    color: #000;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.banner .owl-carousel-o {
+    position: relative;
+}
+
+.banner .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+.banner .owl-nav {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent !important;
+}
+
+.banner .owl-nav:hover {
+    background-color: transparent !important;
+}
+
+.banner .owl-nav .owl-prev {
+    background-color: transparent !important;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    bottom: 0;
+}
+
+.banner .owl-nav .owl-prev {
+    font-family: "JosefinSans-extralight";
+    background-color: transparent;
+    color: #fff;
+    margin: 50px;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.banner .owl-nav .owl-next {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    bottom: 0;
+}
+
+.banner .owl-nav .owl-next {
+    font-family: "JosefinSans-extralight";
+    background-color: transparent;
+    color: #fff;
+    margin: 50px;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.banner .owl-dots {
+    position: absolute;
+    bottom: 70px;
+    right: 65px;
+}
+
+.banner .owl-theme .owl-dots .owl-dot span {
+    width: 11px;
+    height: 11px;
+    margin: 5px;
+    background-color: transparent;
+    outline: #fff 1.5px solid;
+    display: block;
+    backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+
+.banner .carousel-img {
+    max-height: 730px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:993px) and (max-width:1200) {
+    .banner .carousel-img {
+        height: 730px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 769px) and (max-width:992px) {
+    .banner .carousel-img {
+        height: 630px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .banner .owl-nav .owl-prev {
+        background-color: transparent !important;
+        position: absolute;
+        left: 0;
+        top: -150px !important;
+        bottom: 0;
+    }
+
+    .banner .owl-nav .owl-next {
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: -150px !important;
+        bottom: 0;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .banner .carousel-img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+@media (max-width:575px){
+    .banner .carousel-img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner .owl-nav .owl-prev {
+        background-color: transparent !important;
+        position: absolute;
+        left: 0;
+        top: -90px !important;
+        bottom: 0;
+    }
+
+    .banner .owl-nav .owl-next {
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: -90px !important;
+        bottom: 0;
+    }
+}

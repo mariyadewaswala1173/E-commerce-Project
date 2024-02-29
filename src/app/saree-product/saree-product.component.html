@@ -1,0 +1,126 @@
+<section class="bg">
+    <div class="banner-saree">
+        <img src="../../assets/images/saree-product/banner-saree.jpg" alt="">
+    </div>
+    <swiper-container class="mySwiper" navigation="true" pagination="true" pagination-dynamic-bullets="true"
+        effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/handloom saaress.avif" class="type-saree-img" />
+            <h3>Handloom Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/khadi saree.webp" class="type-saree-img" />
+            <h3>Khadi Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/linen saree.avif" class="type-saree-img" />
+            <h3>Linen Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/applic saree.avif" class="type-saree-img" />
+            <h3>Appliqué Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/kalahasti aree.webp" class="type-saree-img" />
+            <h3>Kalahasti Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/dhaniyakhali saree 2.webp" class="type-saree-img" />
+            <h3>Dhaniyakhali Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/chanderi-cotton saree.avif" class="type-saree-img" />
+            <h3>Chanderi Cotton Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/mul mul cotton saree.webp" class="type-saree-img" />
+            <h3>Mul Mul Cotton Sarees</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/cotton stole.avif" class="type-saree-img" />
+            <h3>Cotton Stole</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/blouse.avif" class="type-saree-img" />
+            <h3>Blouses / Shirts</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/dress-material.jpeg" class="type-saree-img" />
+            <h3>Dress Material</h3>
+        </swiper-slide>
+        <swiper-slide>
+            <img src="../../assets/images/saree-types/wedding-collection.webp" class="type-saree-img" />
+            <h3>Wedding Collection</h3>
+        </swiper-slide>
+    </swiper-container>
+    <h4 class="text-center p-3">Sarees</h4>
+
+    <div class="container container-xsm mt-5" style="position: relative;">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6 mb-4 rounded shadow" style="background-color: white;">
+                <app-saree-filter class="" (colorChange)="applyColorFilter($event)" (priceChange)="applyPriceFilter($event)" (categoryChange)="applyCategoryFilter($event)" (fabricChange)="applyFabricFilter($event)" (resetbutton)="resetFilter($event)" (filterById)="filterSareesById($event)"></app-saree-filter>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xsm-6 mb-4" *ngFor="let saree of filteredSarees; index as i">
+                <div class="card product-card">
+                    <div class="img">
+                        <img [src]="saree.image" class="card-img-top product-image" alt="Saree Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{saree.name}}</h5>
+                        <p class="card-text">Rs {{saree.price}}</p>
+                        <p class="card-text">{{saree.id}}</p>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+                        <button class="btn btn-icon"><i class="fa fa-regular fa-heart" ></i></button>
+                        <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="bg">
+    <div class="container mt-5 ">
+        <div class="row">
+            <h4>hello</h4>
+            <div class="col-lg-3 col-md-4 mb-4">
+                <div class="card product-card">
+                    <div class="img">
+                        <img src="../../assets/images/collections/img2.webp" class="card-img-top product-image" alt="Saree Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">saree</h5>
+                        <p class="card-text">Rs 8888</p>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+                        <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+                        <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <ng-template *ngFor="let s of sarees; index as i;trackBy: trackByFn">
+                <div class="col-lg-3 col-md-4 mb-4"  >
+                    <div class="card product-card">
+                        <div class="img">
+                            <img [src]="s.image" class="card-img-top product-image" alt="Saree Image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{s.name}}</h5>
+                            <p class="card-text">Rs {{s.price}}</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+                            <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+                            <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</section> -->

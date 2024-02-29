@@ -1,0 +1,220 @@
+<section class="filter-sec">
+    <div class="column-sidebar">
+        <h5 class="filter-heading">Filter Product By</h5>
+        <ul class="pt-4 filter-list">
+            <li class="dropdown price-dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i>PRICE</i>
+                </a>
+                <ul class="dropdown-menu price-radios">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                            id="priceflexCheckDefault1" (change)="filterByPrice('All')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault1">
+                            All
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault2"
+                            (change)="filterByPrice('under rs.1000')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault2">
+                            under rs.1000
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault3"
+                            (change)="filterByPrice('rs. 1000-3000')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault3">
+                            rs. 1000-3000
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault4"
+                            (change)="filterByPrice('rs. 3000-6000')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault4">
+                            rs. 3000-6000
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault5"
+                            (change)="filterByPrice('rs. 6000-10000')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault5">
+                            rs. 6000-10000
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault6"
+                            (change)="filterByPrice('rs. 10000 and above')">
+
+                        <label class="form-check-label" for="priceflexCheckDefault6">
+                            rs. 10000 and above
+                        </label>
+                    </div>
+                </ul>
+            </li>
+            <hr>
+            <li class="dropdown category-dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i>CATEGORY</i>
+                </a>
+                <ul class="dropdown-menu category-radios">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault1"
+                            (change)="filterByCategory('All')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault1">
+                            All
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault2"
+                            (change)="filterByCategory('Woven')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault2">
+                            Woven
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault3"
+                            (change)="filterByCategory('Embroidery')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault3">
+                            Embroidery
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault4"
+                            (change)="filterByCategory('Tie-Die')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault4">
+                            Tie-Die
+                        </label>
+                    </div>
+                </ul>
+            </li>
+            <hr>
+            <li class="dropdown fabric-dropdown">
+                <a class=" dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i>FABRIC</i>
+                </a>
+                <ul class="dropdown-menu category-radios">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault1"
+                            (change)="filterByFabric('All')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault1">
+                            All
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault2"
+                            (change)="filterByFabric('Silk')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault2">
+                            Silk
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault3"
+                            (change)="filterByFabric('Cotton')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault3">
+                            Cotton
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="priceflexCheckDefault4"
+                            (change)="filterByFabric('Viscose')" />
+
+                        <label class="form-check-label" for="priceflexCheckDefault4">
+                            Viscose
+                        </label>
+                    </div>
+                </ul>
+            </li>
+            <hr>
+            <li class="dropdown color-dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i>COLOR</i>
+                </a>
+                <ul class="dropdown-menu color-radios">
+                    <div class="form-check pt-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault1"
+                            (change)="filterByColor('All')">
+
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            All
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault1"
+                            (change)="filterByColor('Black')">
+
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <i class="fa fa-square" style="color: black;" aria-hidden="true"></i> black
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault2"
+                            (change)="filterByColor('Blue')">
+
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <i class="fa fa-square" style="color: blue;" aria-hidden="true"></i> blue
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault1"
+                            (change)="filterByColor('Beige')">
+
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <i class="fa fa-square" style="color: Beige;" aria-hidden="true"></i> Beige
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check pb-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault1"
+                            (change)="filterByColor('White')">
+
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <i class="fa fa-square" style="color: white;" aria-hidden="true"></i> white
+                        </label>
+                    </div>
+                    
+                </ul>
+            </li>
+            <hr>
+            <li class="dropdown id-dropdown">
+                <a class=" dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i>PRODUCT ID</i>
+                </a>
+                <ul class="dropdown-menu id-radios">
+                    <div class="form-check text-center p-0 d-flex">
+                        <input class="form-input py-2 px-3" type="text" value="" placeholder="Enter Product ID" #productId>
+                        <button class="btn btn-pink" (click)="applyFilter(productId.value)"><i class="fa fa-search"></i></button>
+                    </div>
+                </ul>
+            </li>
+            <button class="btn btn-pink button-filter" (click)="resetFilter('clicked')">Reset</button>
+
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,272 @@
+/* You can add global styles to this file, and also import other style files */
+/* $dark: #000;
+$light: #fff;
+$grey: #7b7b7b;
+$dark-grey: #231f20; */
+
+:root {
+  --dark: #000000;
+  --light: #ffffff;
+  --primary: #c3026d;
+  --secondary: #b88153;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('../src/assets/font/josephin-Sans/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-bold';
+  src: url('../src/assets/font/josephin-Sans/static/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-semibold';
+  src: url('../src/assets/font/josephin-Sans/static/JosefinSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-extralight';
+  src: url('../src/assets/font/josephin-Sans/static/JosefinSans-ExtraLight.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: --dark;
+  font-family: JosefinSans;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #000;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 125px;
+  right: 65px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 11px;
+  height: 11px;
+  margin: 5px;
+  background-color: transparent;
+  outline: #fff 1.5px solid;
+  display: block;
+  backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fff;
+}
+
+.owl-carousel-o {
+  position: relative;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: 20px;
+  top: 325px;
+  bottom: 0;
+  z-index: 99;
+  font-size: 35px !important;
+  color: var(--light) !important;
+  text-shadow: #7b7b7b 2px 2px 15px;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: 20px;
+  top: 325px;
+  bottom: 0;
+  z-index: 1;
+  font-size: 35px !important;
+  color: var(--light) !important;
+  text-shadow: #7b7b7b 2px 2px 15px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.btn-pink {
+  background-color: var(--primary);
+  color: var(--light);
+}
+.btn-pink:hover{
+  color: var(--primary);
+  border: #c3026d solid 1px;
+
+}
+
+@media (min-width: 773px) and (max-width:992px) {
+  .owl-carousel-o {
+    position: relative;
+  }
+
+  .owl-nav .owl-prev {
+    position: absolute;
+    left: 20px;
+    top: 300px;
+    bottom: 0;
+    z-index: 99;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+
+  .owl-nav .owl-next {
+    position: absolute;
+    right: 20px;
+    top: 300px;
+    bottom: 0;
+    z-index: 1;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+}
+
+@media (min-width:576px) and (max-width: 772px) {
+  .owl-carousel-o {
+    position: relative;
+  }
+
+  .owl-nav .owl-prev {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    bottom: 0;
+    z-index: 99;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+
+  .owl-nav .owl-next {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    bottom: 0;
+    z-index: 1;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+}
+
+@media (max-width:575px) {
+  .owl-carousel-o {
+    position: relative;
+  }
+
+  .owl-nav .owl-prev {
+    position: absolute;
+    left: 20px;
+    top: 180px;
+    bottom: 0;
+    z-index: 99;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+
+  .owl-nav .owl-next {
+    position: absolute;
+    right: 20px;
+    top: 180px;
+    bottom: 0;
+    z-index: 1;
+    font-size: 35px !important;
+    color: var(--light) !important;
+    text-shadow: #7b7b7b 2px 2px 15px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 40px;
+    right: 25px;
+  }
+}
+
+@media (min-width:300px) and (max-width:575px) {
+  .container-xsm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .col-xsm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}

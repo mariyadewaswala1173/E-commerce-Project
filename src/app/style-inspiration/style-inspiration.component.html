@@ -1,0 +1,123 @@
+<section class="style_inspiration">
+  <div class="container container-xsm mt-5 ">
+    <div class="saree my-2">
+      <div class="content ">
+        <h2 class="me-3">Saree Elegance</h2>
+        <p class="my-2 heading-para">Embrace timeless elegance with our exquisite collection of sarees. From traditional
+          silk sarees to modern
+          drapes, discover the perfect ensemble for every occasion.</p>
+
+      </div>
+      <div class="row">
+        <a routerLink="/product/saree" class="view-more"> view all <i class="fa fa-long-arrow-right me-auto h5"
+            aria-hidden="true" >
+          </i></a>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xsm-6 mb-4" *ngFor="let s of sarees; index as i">
+          <div class="card product-card">
+            <div class="img">
+              <img [src]="s.image" class="card-img-top product-image" alt="Saree Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{s.name}}</h5>
+              <p class="card-text">Rs {{s.price}}</p>
+            </div>
+            <div class="product-buttons">
+              <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kurti my-2 ">
+      <div class="content ">
+        <h2 class="me-3">Kurti Chic</h2>
+        <p class="my-2 heading-para">Stay effortlessly stylish with our curated selection of kurtis. Explore vibrant prints,
+          flattering
+          silhouettes, and comfortable fabrics that blend fashion and comfort seamlessly.</p>
+
+      </div>
+      <div class="row">
+        <a routerLink="/product/kurti" class="view-more"> view all <i class="fa fa-long-arrow-right me-auto h5"
+          aria-hidden="true" >
+        </i></a>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xsm-6 mb-4"  *ngFor="let k of kurtis; index as i">
+          <div class="card product-card">
+            <div class="img">
+              <img [src]="k.image" class="card-img-top product-image" alt="Kurti Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{k.name}}</h5>
+              <p class="card-text">Rs {{k.price}}</p>
+            </div>
+            <div class="product-buttons">
+              <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Bag my-2">
+      <div class="content ">
+        <h2 class="me-3">Bag Essentials</h2>
+        <p class="my-2 heading-para">Complete your look with our versatile range of bags. Whether you prefer chic totes,
+          stylish backpacks, or
+          elegant clutches, we have the perfect accessory to elevate your outfit.</p>
+      </div>
+      <div class="row">
+        <a routerLink="/product/bag" class="view-more" > view all <i class="fa fa-long-arrow-right me-auto h5"
+            aria-hidden="true" >
+          </i></a>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xsm-6 mb-4" *ngFor="let b of bags; index as i">
+          <div class="card product-card">
+            <div class="img">
+              <img [src]="b.image" class="card-img-top product-image" alt="Bag Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{b.name}}</h5>
+              <p class="card-text">Rs {{b.price}}</p>
+            </div>
+            <div class="product-buttons">
+              <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jwellery my-2">
+      <div class="content ">
+        <h2 class="me-3">Jewellery Glamour</h2>
+        <p class="my-2 heading-para">Add a touch of glamour to any outfit with our stunning jewelry collection. From
+          delicate earrings to
+          statement necklaces, discover pieces that accentuate your style and personality.</p>
+
+      </div>
+      <div class="row">
+        <a routerLink="/product/jewellery" class="view-more"> view all <i class="fa fa-long-arrow-right me-auto h5"
+          aria-hidden="true" >
+        </i></a>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xsm-6 mb-4" *ngFor="let j of jwellerys; index as i">
+          <div class="card product-card">
+            <div class="img">
+              <img [src]="j.image" class="card-img-top product-image" alt="Jwellery Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{j.name}}</h5>
+              <p class="card-text">Rs {{j.price}}</p>
+            </div>
+            <div class="product-buttons">
+              <button class="btn btn-icon"><i class="fa fa-thin fa-eye"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-regular fa-heart"></i></button>
+              <button class="btn btn-icon"><i class="fa fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
